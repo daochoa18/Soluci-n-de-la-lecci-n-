@@ -35,19 +35,19 @@ class Cuenta_mixta(cuenta_ahorro, cuenta_corriente):
         if self.saldo <= self.limite:
             self.saldo += cantidad
         else:
-            print("El saldo de la cuenta a llegado a su limite")
+            print("El saldo de la cuenta a llegado a su tope")
 
     def bono(self, bono):
         if self.saldo <= self.limite:
             self.saldo += bono
         else:
-            print("El saldo de la cuenta a llegado a su limite")
+            print("El saldo de la cuenta a llegado a su tope")
 
 if  "name"=="main_":
-    cuenta_pru = cuenta_corriente("85736", "Pitof", 3854.00, True)
+    cuenta_pru = cuenta_corriente("85736", "daniela", 2354.00, True)
     print(cuenta_pru)
     cuenta_pru.mostrar_saldo()
-    cuenta_pru.credito(754.00)
+    cuenta_pru.credito(800.00)
     cuenta_pru.mostrar_saldo()
     cuenta_pru.debito(356.00)
     cuenta_pru.mostrar_saldo()
